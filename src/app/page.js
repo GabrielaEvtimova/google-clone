@@ -1,5 +1,5 @@
-import HomeHeader from "@/components/HomeHeader/HomeHeader";
-import HomeSearch from "@/components/HomeSearch/HomeSearch";
+import HomeHeader from "@/components/Home/HomeHeader/HomeHeader";
+import HomeSearch from "@/components/Home/HomeSearch/HomeSearch";
 import Image from "next/image";
 import React from "react";
 

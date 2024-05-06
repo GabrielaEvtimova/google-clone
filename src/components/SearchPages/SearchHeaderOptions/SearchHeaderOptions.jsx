@@ -15,7 +15,7 @@ export default function SearchHeaderOptions() {
   const selectOption = (option) => {
     router.push(
       `/search/${
-        option === "Images" ? "images" : "web"
+        option === "Images" ? "image" : "web"
       }?searchTerm=${searchTerm}`
     );
   };
@@ -37,7 +37,7 @@ export default function SearchHeaderOptions() {
       <div 
       className={`flex items-center space-x-1 border-b-4 border-transparent
       active:text-blue-500 active:border-blue-500 cursor-pointer pb-3 px-2
-      ${path === "/search/images" && '!text-blue-600 !border-blue-600'}`}
+      ${path === "/search/image" && '!text-blue-600 !border-blue-600'}`}
         onClick={() => selectOption("Images")}
       >
         <AiOutlineCamera className="text-md" />

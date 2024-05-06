@@ -1,7 +1,29 @@
-import React from 'react'
+import Logo from "@/components/Reusable/Logo/Logo";
+import Link from "next/link";
+import React from "react";
+import SearchBox from "../SearchBox/SearchBox";
+import ButtonSignIn from "@/components/Reusable/Logo/ButtonSignIn/ButtonSignIn";
+import { RiSettings3Line } from "react-icons/ri";
+import { TbGridDots } from "react-icons/tb";
 
 export default function SearchHeader() {
   return (
-    <div>SearchHeader</div>
-  )
+    <header className="sticky top-0 bg-white">
+      <div className="flex items-center w-full p-6 justify-between">
+        <Link href="/">
+          <Logo width={120} height={40} />
+        </Link>
+        <div className="flex-1">
+          <SearchBox />
+        </div>
+        <div className="hidden md:inline-flex">
+          <RiSettings3Line className="bg-transparent hover:bg-neutral-200 p-2 text-4xl rounded-full cursor-pointer" />
+          <TbGridDots className="bg-transparent hover:bg-neutral-200 p-2 text-4xl rounded-full cursor-pointer" />
+        </div>
+        <div className="ml-2">
+          <ButtonSignIn />
+        </div>
+      </div>
+    </header>
+  );
 }

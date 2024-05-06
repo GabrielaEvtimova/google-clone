@@ -23,21 +23,21 @@ export default function SearchHeaderOptions() {
   return (
     <div
       className="flex space-x-2 items-center select-none border-b w-full justify-center 
-    lg:justify-start lg:pl-52 text-neutral-700"
+    lg:justify-start lg:pl-52 text-neutral-700 text-sm"
     >
       <div
         className={`flex items-center space-x-1 border-b-4 border-transparent
       active:text-blue-500 active:border-blue-500 cursor-pointer pb-3 px-2
-      ${path === "/search/web" && '!text-blue-600 !border-blue-600'}`}
+      ${path === "/search/web" && "!text-blue-600 !border-blue-600"}`}
         onClick={() => selectOption("All")}
       >
         <AiOutlineSearch className="text-md" />
         <p>All</p>
       </div>
-      <div 
-      className={`flex items-center space-x-1 border-b-4 border-transparent
+      <div
+        className={`flex items-center space-x-1 border-b-4 border-transparent
       active:text-blue-500 active:border-blue-500 cursor-pointer pb-3 px-2
-      ${path === "/search/image" && '!text-blue-600 !border-blue-600'}`}
+      ${path === "/search/image" && "!text-blue-600 !border-blue-600"}`}
         onClick={() => selectOption("Images")}
       >
         <AiOutlineCamera className="text-md" />

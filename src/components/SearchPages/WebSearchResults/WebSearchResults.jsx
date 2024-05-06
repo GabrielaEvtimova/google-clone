@@ -5,7 +5,7 @@ import Parser from "html-react-parser"
 export default function WebSearchResults({ results }) {
   return (
     <div className="w-full mx-auto px-3 pb-24 sm:pl-[5%] md:pl-[14%] lg:pl-52">
-      <p className="text-neutral-600 mb-5 mt-3">
+      <p className="text-neutral-600 mb-5 mt-3 text-sm">
         About {results.searchInformation.formattedTotalResults} results (
         {results.searchInformation.formattedSearchTime} seconds)
       </p>

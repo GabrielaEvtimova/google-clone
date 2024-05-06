@@ -1,3 +1,4 @@
+import WebSearchResults from "@/components/SearchPages/WebSearchResults/WebSearchResults";
 import Link from "next/link";
 import React from "react";
 
@@ -19,8 +20,7 @@ export default async function WebSearchPage({ searchParams }) {
           No results found for &quot;{term}&quot;
         </h1>
         <p className="text-lg">
-          Try searching for something else.
-          {" "}
+          Try searching for something else.{" "}
           <Link href="/" className="text-blue-500">
             Start a new search
           </Link>
@@ -30,13 +30,6 @@ export default async function WebSearchPage({ searchParams }) {
   }
 
   return (
-    <div className="">
-      {results &&
-        results.map((result, index) => (
-          <div key={index}>
-            <h1>{result.title}</h1>
-          </div>
-        ))}
-    </div>
+    <div className="">{results && <WebSearchResults results={data} />}</div>
   );
 }

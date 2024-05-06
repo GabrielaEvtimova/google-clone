@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 // import React, { useEffect } from "react";
 
 export default function Error({ error, reset }) {
@@ -9,7 +11,9 @@ export default function Error({ error, reset }) {
   return (
     <div className="flex flex-col justify-center items-center pt-10">
       <h1 className="text-3xl mb-4">Something went wrong.</h1>
-      <button className="text-blue-500">Try again</button>
+      <Link href="/">
+        <button className="text-blue-500">Try again</button>
+      </Link>
     </div>
   );
 }

@@ -5,6 +5,7 @@ import SearchBox from "../SearchBox/SearchBox";
 import ButtonSignIn from "@/components/Reusable/Logo/ButtonSignIn/ButtonSignIn";
 import { RiSettings3Line } from "react-icons/ri";
 import { TbGridDots } from "react-icons/tb";
+import SearchHeaderOptions from "../SearchHeaderOptions/SearchHeaderOptions";
 
 export default function SearchHeader() {
   return (
@@ -24,6 +25,7 @@ export default function SearchHeader() {
           <ButtonSignIn />
         </div>
       </div>
+      <SearchHeaderOptions/>
     </header>
   );
 }

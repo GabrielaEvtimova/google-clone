@@ -13,7 +13,7 @@ export default function PaginationButtons() {
   const startIndex = +serachParams.get("start") || 1;
 
   return (
-    <div className="flex justify-between text-blue-700 px-10 sm:justify-start sm:space-x-44 sm:px-0">
+    <div className="flex justify-between text-blue-700 px-10 sm:justify-start sm:space-x-44 sm:px-0 mb-[-20px] sm:mb-6">
       {startIndex >= 10 && (
         <Link
           href={`${path}?searchTerm=${searchTerm}&start=${(

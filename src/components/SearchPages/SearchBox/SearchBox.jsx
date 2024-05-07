@@ -22,7 +22,7 @@ export default function SearchBox() {
 
   return (
     <form
-      className="flex border border-neutral-300 rounded-full shadow-lg px-6 py-3 ml-10 mr-5 flex-grow max-w-3xl items-center justify-between"
+      className="flex border border-neutral-300 rounded-full shadow-lg px-6 py-3 mt-4 ml-5 mr-0 sm:mt-0 sm:ml-10 sm:mr-5 sm:flex-grow max-w-4xl items-center sm:justify-between"
       onSubmit={handleSubmit}
     >
       <input

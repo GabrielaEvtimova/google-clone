@@ -10,11 +10,11 @@ import SearchHeaderOptions from "../SearchHeaderOptions/SearchHeaderOptions";
 export default function SearchHeader() {
   return (
     <header className="sticky top-0 bg-white">
-      <div className="flex items-center w-full p-6 justify-between">
-        <Link href="/" className="mr-[-20px] sm:mr-0  ">
+      <div className="flex items-center w-full p-6 justify-between flex-col sm:flex-row">
+        <Link href="/" className="mr-[-20px] sm:mr-0 ">
           <Logo width={90} height={30} />
         </Link>
-        <div className="flex-1">
+        <div className="sm:flex-1 w-full">
           <SearchBox />
         </div>
         <div className="hidden md:inline-flex">

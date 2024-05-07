@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import Parser from "html-react-parser"
+import Parser from "html-react-parser";
 import PaginationButtons from "../PaginationButtons/PaginationButtons";
 
 export default function WebSearchResults({ results }) {
@@ -13,15 +13,20 @@ export default function WebSearchResults({ results }) {
       {results.items?.map((result) => (
         <div key={result.link} className="mb-8 max-w-xl">
           <div className="flex flex-col group">
-            <Link href={result.link} className="truncate ">{result.formattedUrl}</Link>
-            <Link href={result.link} className="group-hover:underline decoration-blue-800 text-xl truncate font-medium text-blue-800">
+            <Link href={result.link} className="truncate ">
+              {result.formattedUrl}
+            </Link>
+            <Link
+              href={result.link}
+              className="group-hover:underline decoration-blue-800 text-xl truncate font-medium text-blue-800"
+            >
               {result.title}
             </Link>
           </div>
           <p className="text-neutral-600">{Parser(result.htmlSnippet)}</p>
         </div>
       ))}
-      <PaginationButtons/>
+      <PaginationButtons />
     </div>
   );
 }

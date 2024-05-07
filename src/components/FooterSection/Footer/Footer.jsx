@@ -3,7 +3,7 @@ import CountryLookUp from "../CountryLookUp/CountryLookUp";
 
 export default function Footer() {
   return (
-    <footer className="absolute bottom-0 text-[8pt] sm:text-sm text-neutral-500 bg-[#f2f2f2] w-full">
+    <footer className="absolute bottom-0 text-[9pt] sm:text-sm text-neutral-500 bg-[#f2f2f2] w-full">
       <div className="border-b px-8 py-3">
         <CountryLookUp />
       </div>

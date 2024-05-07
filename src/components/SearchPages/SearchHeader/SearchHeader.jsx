@@ -12,7 +12,7 @@ export default function SearchHeader() {
     <header className="sticky top-0 bg-white">
       <div className="flex items-center w-full p-6 justify-between">
         <Link href="/">
-          <Logo width={120} height={40} />
+          <Logo width={90} height={30} />
         </Link>
         <div className="flex-1">
           <SearchBox />
@@ -21,11 +21,10 @@ export default function SearchHeader() {
           <RiSettings3Line className="bg-transparent hover:bg-neutral-200 p-2 text-4xl rounded-full cursor-pointer" />
           <TbGridDots className="bg-transparent hover:bg-neutral-200 p-2 text-4xl rounded-full cursor-pointer" />
         </div>
-        <div className="ml-2">
-          <ButtonSignIn />
-        </div>
+
+        <ButtonSignIn />
       </div>
-      <SearchHeaderOptions/>
+      <SearchHeaderOptions />
     </header>
   );
 }

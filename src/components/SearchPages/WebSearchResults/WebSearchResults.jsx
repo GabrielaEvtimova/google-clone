@@ -13,7 +13,7 @@ export default function WebSearchResults({ results }) {
       {results.items?.map((result) => (
         <div key={result.link} className="mb-8 max-w-xl">
           <div className="flex flex-col group">
-            <Link href={result.link}>{result.formattedUrl}</Link>
+            <Link href={result.link} className="truncate ">{result.formattedUrl}</Link>
             <Link href={result.link} className="group-hover:underline decoration-blue-800 text-xl truncate font-medium text-blue-800">
               {result.title}
             </Link>

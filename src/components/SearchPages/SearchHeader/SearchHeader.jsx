@@ -11,7 +11,7 @@ export default function SearchHeader() {
   return (
     <header className="sticky top-0 bg-white">
       <div className="flex items-center w-full p-6 justify-between">
-        <Link href="/">
+        <Link href="/" className="mr-[-20px] sm:mr-0  ">
           <Logo width={90} height={30} />
         </Link>
         <div className="flex-1">

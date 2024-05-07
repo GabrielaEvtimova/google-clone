@@ -15,7 +15,7 @@ export default function SearchBox() {
   const [searchTerm, setSearchTerm] = useState(term || "");
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     if (!searchTerm.trim()) return;
     router.push(`/search/web/?searchTerm=${searchTerm}`);
   };

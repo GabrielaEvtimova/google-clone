@@ -4,7 +4,7 @@ import React from "react";
 export default function ImageSearchResults({ results }) {
   return (
     <div className="pb-24 mt-4">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-6 gap-x-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-4 gap-x-4">
         {results.items.map((result) => (
           <div key={result.link} className="mb-8">
             <div className="group">

@@ -21,8 +21,9 @@ export default function SearchHeader() {
           <RiSettings3Line className="bg-transparent hover:bg-neutral-200 p-2 text-4xl rounded-full cursor-pointer" />
           <TbGridDots className="bg-transparent hover:bg-neutral-200 p-2 text-4xl rounded-full cursor-pointer" />
         </div>
-
-        <ButtonSignIn />
+        <div className="hidden sm:inline-flex sm:ml-2">
+          <ButtonSignIn />
+        </div>
       </div>
       <SearchHeaderOptions />
     </header>

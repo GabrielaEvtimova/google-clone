@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <HomeHeader />
-      <div className="flex flex-col items-center mt-60">
+      <div className="flex flex-col items-center mt-24">
         <Logo width={400} height={200} />
         <HomeSearch />
       </div>

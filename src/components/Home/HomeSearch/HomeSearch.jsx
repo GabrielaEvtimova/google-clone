@@ -56,14 +56,14 @@ export default function HomeSearch() {
       <div className="flex flex-col space-y-2 sm:space-y-0 justify-center sm:flex-row sm:space-x-4 mt-8">
         <button
           onClick={handleSubmit}
-          className="bg-[#f8f9fa] rounded-md text-neutral-800 hover:ring-neutral-200 focus:outline-none active:ring-neutral-300 hover:shadow-md w-36 h-10 transition-shadow"
+          className="bg-[#f8f9fa] rounded-md text-neutral-800 text-sm hover:ring-neutral-200 focus:outline-none active:ring-neutral-300 hover:shadow-md w-36 h-10 transition-shadow"
         >
           Google Search
         </button>
         <button
           disabled={randomWordLoading}
           onClick={handleRandomSearch}
-          className="bg-[#f8f9fa] rounded-md text-neutral-800 hover:ring-neutral-200 focus:outline-none active:ring-neutral-300 hover:shadow-md w-36 h-10 transition-shadow disabled:opacity-80 disabled:shadow-sm"
+          className="bg-[#f8f9fa] rounded-md text-neutral-800 text-sm hover:ring-neutral-200 focus:outline-none active:ring-neutral-300 hover:shadow-md w-36 h-10 transition-shadow disabled:opacity-80 disabled:shadow-sm"
         >
           {randomWordLoading ? "Loading..." : " I'm Feeling Lucky"}
         </button>

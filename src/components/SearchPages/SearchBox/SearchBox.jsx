@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import { BsFillMicFill } from "react-icons/bs";
 import { RxCross2 } from "react-icons/rx";
@@ -11,6 +11,7 @@ export default function SearchBox() {
   const term = searchParams.get("searchTerm");
 
   const router = useRouter();
+  const inputRef = useRef();
 
   const [searchTerm, setSearchTerm] = useState(term || "");
 
@@ -18,6 +19,8 @@ export default function SearchBox() {
     e.preventDefault();
     if (!searchTerm.trim()) return;
     router.push(`/search/web/?searchTerm=${searchTerm}`);
+
+    inputRef.current.blur();
   };
 
   return (
@@ -30,6 +33,7 @@ export default function SearchBox() {
         className="w-full focus:outline-none"
         onChange={(e) => setSearchTerm(e.target.value)}
         value={searchTerm}
+        ref={inputRef}
       />
 
       <RxCross2

@@ -36,9 +36,9 @@ npm install
 
 Explain the purpose of each environment variable used in the project and how to set them up.
 
-- **GOOGLE_API_KEY**: Used to fetch data from Google for Google searches. [Programmable Search Engine](https://programmablesearchengine.google.com/about/)
+- **GOOGLE_API_KEY**: Used to fetch data from Google for Google searches. [Programmable Search Engine](https://developers.google.com/custom-search/v1/introduction)
 - **NEXT_PUBLIC_IP_API_KEY**: Used for generating the country from where the user is browsing. [IP Location API](https://extreme-ip-lookup.com/)
-- **CONTEXT_KEY**: Used for the Google fetch URL. [Search engine ID which could be accessed after creating a new search engine](https://programmablesearchengine.google.com/about/)
+- **CONTEXT_KEY**: Used for the Google fetch URL. [Search engine ID which could be accessed after creating a new search engine](https://developers.google.com/custom-search/v1/introduction)
 
 Create a `.env.local` file in the root directory of your project and add the following:
 
